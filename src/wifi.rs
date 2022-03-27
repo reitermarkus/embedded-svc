@@ -30,39 +30,39 @@ pub enum AuthMethod {
     #[cfg_attr(feature = "use_strum", strum(serialize = "none", message = "None"))]
     None,
     #[cfg_attr(feature = "use_strum", strum(serialize = "wep", message = "WEP"))]
-    WEP,
+    Wep,
     #[cfg_attr(feature = "use_strum", strum(serialize = "wpa", message = "WPA"))]
-    WPA,
+    Wpa,
     #[cfg_attr(
         feature = "use_strum",
-        strum(serialize = "wpa2personal", message = "WPA2 Personal")
+        strum(serialize = "wpa2", message = "WPA2")
     )]
-    WPA2Personal,
+    Wpa2,
     #[cfg_attr(
         feature = "use_strum",
-        strum(serialize = "wpawpa2personal", message = "WPA & WPA2 Personal")
+        strum(serialize = "wpawpa2", message = "WPA & WPA2")
     )]
-    WPAWPA2Personal,
+    WpaWpa2,
     #[cfg_attr(
         feature = "use_strum",
         strum(serialize = "wpa2enterprise", message = "WPA2 Enterprise")
     )]
-    WPA2Enterprise,
+    Wpa2Enterprise,
     #[cfg_attr(
         feature = "use_strum",
-        strum(serialize = "wpa3personal", message = "WPA3 Personal")
+        strum(serialize = "wpa3", message = "WPA3")
     )]
-    WPA3Personal,
+    Wpa3,
     #[cfg_attr(
         feature = "use_strum",
-        strum(serialize = "wpa2wpa3personal", message = "WPA2 & WPA3 Personal")
+        strum(serialize = "wpa2wpa3", message = "WPA2 & WPA3")
     )]
-    WPA2WPA3Personal,
+    Wpa2Wpa3,
     #[cfg_attr(
         feature = "use_strum",
-        strum(serialize = "wapipersonal", message = "WAPI Personal")
+        strum(serialize = "wapi", message = "WAPI")
     )]
-    WAPIPersonal,
+    Wapi,
 }
 
 impl Default for AuthMethod {
